@@ -224,6 +224,96 @@ text-align: end;
 .copyright{
 margin-top: auto;
 }
+.product-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  }
+  .product-images img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .productimage1 { grid-area: 1 / 1 / 3 / 3; }
+  .productimage2 { grid-area: 1 / 3 / 2 / 4; }
+  .productimage3 { grid-area: 1 / 4 / 2 / 5; }
+  .productimage4 { grid-area: 2 / 3 / 3 / 4; }
+  .productimage5 { grid-area: 2 / 4 / 3 / 5; }
+
+.h1-products{
+  font-size: 40px;
+  color: var(--text-color);
+  font-weight: 500;
+  text-shadow: none;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 500px;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.menu-buttons{
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid rgb(228, 228, 228); 
+}
+.menu-item {
+  border: none;
+ background-color: white;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  padding: 20px 0 5px 0;
+}
+
+.menu-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+}
+
+.menu-item.active:after {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+.content-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.left-content, .right-content{
+  display: flex;
+  gap: 40px;
+}
+.left-content div, .right-content div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left-content img ,.right-content img{
+height: 16px;
+}
+.h2-products{
+  font-size: 20px;
+  color:var(--text-color);
+  text-align: start;
+  padding: 20px 0;
+}
   @media screen and (max-width: 900px) {
     .wrapper .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);
@@ -231,8 +321,11 @@ margin-top: auto;
     .header-content{
       display: none;
   }
+  .hero{
+    height: 400px;
+  }
   h1{
-    font-size: 50px;
+    font-size: 40px;
   }
   h2{
     font-size: 40px;
@@ -254,7 +347,11 @@ margin-top: auto;
       gap: 30px;
       position: absolute;
       top: 70px;
-      left: -90px;
+      left: -110px;
+      background-color: white;
+      padding: 20px 40px 20px 20px;
+      border: 1px solid whitesmoke;
+      border-radius: 20px 0px 0px 20px;
   }
   .hamburger-card a{
      font-size: 25px;
