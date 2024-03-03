@@ -330,7 +330,6 @@ object-position: center;
   display: flex;
   align-items: center;
   gap: 15px;
-  width: 300px;
 }
 
 .left-content img ,.right-content img{
@@ -492,6 +491,14 @@ footer{
   }
   .product-carousel{
     display: block;
+  }
+
+  .left-content, .right-content{
+   flex-direction: column;
+    gap: 20px;
+  }
+  .content-wrapper{
+    gap: 20px;
   }
   }
   @media screen and (max-width: 600px) {
