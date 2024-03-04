@@ -424,7 +424,6 @@ gap: 10px;
 }
 .container {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   margin-top: 20px;
   margin-bottom: 60px;
@@ -634,6 +633,9 @@ footer{
   .content-wrapper{
     gap: 20px;
   }
+  .container{
+        flex-direction: column;
+  }
   }
   @media screen and (max-width: 600px) {
     .wrapper .carousel {
@@ -642,6 +644,7 @@ footer{
     .menu-buttons{
       justify-content: space-between;
       }
+    
       .box {
         width: 100%;
         height: fit-content;
