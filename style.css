@@ -77,7 +77,7 @@ transition: background-color 0.5s ease;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
-    background-image: url(https://images.unsplash.com/photo-1518011561382-adb6cac8d645?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(/img/main.webp);
 }
 h1{
     font-size: 80px;
@@ -319,17 +319,17 @@ object-position: center;
 }
 .content-wrapper{
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 40px;
 }
 .left-content, .right-content{
   display: flex;
-  gap: 40px;
+  gap: 10px;
+  flex-direction: column;
 }
 .left-content div, .right-content div{
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .left-content img ,.right-content img{
@@ -489,8 +489,12 @@ input {
   align-items: center;
   justify-content: center;
 }
-.images {
+.img-box a{
   height: 290px;
+  width: 100%;
+}
+.images {
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -554,6 +558,62 @@ object-position: center;
 .top-searches p{
   font-size: 14px;
   font-weight: 500;
+}
+.tilmeld-wrapper{
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 80px;
+margin-top: 40px;
+}
+.tilmeld-hero{
+  width: 50%;
+}
+.tilmeld-hero img {
+width: 100%;
+height: auto;
+}
+
+.form-container {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px 30px;
+}
+
+.title {
+  margin: 10px 0 30px 0;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input {
+  border-radius: 20px;
+  box-shadow: 0px 1px 3px rgb(199, 199, 199);
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 15px 15px;
+  font-size: 16px;
+}
+label{
+  font-size: 16px;
+}
+.form-btn {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: var(--logo-color);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px rgb(199, 199, 199);
+  margin-top: 40px;
 }
   @media screen and (max-width: 900px) {
     .wrapper .carousel {
@@ -636,6 +696,11 @@ footer{
   .container{
         flex-direction: column;
   }
+  .tilmeld-hero {
+   display: none;
+  }
+  
+    
   }
   @media screen and (max-width: 600px) {
     .wrapper .carousel {
