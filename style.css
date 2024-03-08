@@ -12,6 +12,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     box-sizing: border-box;
+    accent-color: var(--logo-color);
 }
 body{
     padding: 0 5%;
@@ -617,14 +618,13 @@ label{
 }
 .wrapper-questions{
   width: 100%;
-  height: 120vh;
+  height: 1200px;
   background-image: url(/img/questions/main.webp);
   background-position: center;
   background-size: cover;
   margin-top: 10px;
   margin-bottom: 80px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .questions-form{
@@ -633,7 +633,7 @@ label{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   padding: 40px 20px 120px 20px;
   background-color: white;
   border-radius: 20px;
@@ -650,6 +650,14 @@ label{
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.questions-form h2{
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 500;
+  text-shadow: none;
+  align-self: flex-start;
+  padding: 5px 5px;
+}
 .bars-wrapper{
   display: flex;
   gap: 5px;
@@ -663,23 +671,31 @@ label{
 #active-bar{
 background-color: var(--logo-color);
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
+.dropdown ul {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: white;
+}
+.dropdown ul label{
+  display: flex;
+  gap: 10px;
+}
+.dropdown{
+  width: 100%;
+}
+.dropdown button {
+  width: 100%;
+  text-align: start;
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgb(199, 199, 199);
+  font-size: 16px;
 }
 
-.dropdown-content label {
-  display: block;
-}
   @media screen and (max-width: 900px) {
     .wrapper .carousel {
       grid-auto-columns: calc((100% / 2) - 9px);

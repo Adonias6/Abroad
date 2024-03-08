@@ -59,7 +59,7 @@
     </header>
     <main>
       <div class="wrapper-questions">
-        <form class="questions-form" action="">
+        <form class="questions-form">
           <div class="bars-wrapper">
             <div class="form-bars" id="active-bar"></div>
             <div class="form-bars"></div>
@@ -67,145 +67,90 @@
             <div class="form-bars"></div>
           </div>
           <h1>Find din rejse!</h1>
-          <label for="">Hvilke lande vil du gerne arbejde i?</label>
+          <h2>Hvilke lande vil du gerne arbejde i?</h2>
           <div class="dropdown">
-            <input
-              type="text"
-              onclick="toggleDropdown('countryDropdown1')"
-              placeholder="Select countries"
-            />
-            <div id="countryDropdown1" class="dropdown-content">
-              <label for="country_usa1"
-                ><input
-                  type="checkbox"
-                  id="country_usa1"
-                  name="country"
-                  value="USA"
-                />
-                USA</label
-              >
-              <label for="country_canada1"
-                ><input
-                  type="checkbox"
-                  id="country_canada1"
-                  name="country"
-                  value="Canada"
-                />
-                Canada</label
-              >
-              <label for="country_australia1"
-                ><input
-                  type="checkbox"
-                  id="country_australia1"
-                  name="country"
-                  value="Australia"
-                />
-                Australia</label
-              >
-              <label for="country_japan1"
-                ><input
-                  type="checkbox"
-                  id="country_japan1"
-                  name="country"
-                  value="Japan"
-                />
-                Japan</label
-              >
-              <!-- Add more countries as needed -->
-            </div>
+            <button onclick="toggleDropdown(event, this)">
+              Vælg dine lande
+            </button>
+            <ul>
+              <li>
+                <label for=""> <input type="checkbox" />Lissabon</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Barcelona</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Paris</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Valpolicella</label>
+              </li>
+            </ul>
           </div>
-
+          <h2>Hvilke arbejdsopgaver vil du gerne have?</h2>
           <div class="dropdown">
-            <input
-              type="text"
-              onclick="toggleDropdown('countryDropdown2')"
-              placeholder="Select countries"
-            />
-            <div id="countryDropdown2" class="dropdown-content">
-              <label for="country_usa2"
-                ><input
-                  type="checkbox"
-                  id="country_usa2"
-                  name="country"
-                  value="USA"
-                />
-                USA</label
-              >
-              <label for="country_canada2"
-                ><input
-                  type="checkbox"
-                  id="country_canada2"
-                  name="country"
-                  value="Canada"
-                />
-                Canada</label
-              >
-              <label for="country_australia2"
-                ><input
-                  type="checkbox"
-                  id="country_australia2"
-                  name="country"
-                  value="Australia"
-                />
-                Australia</label
-              >
-              <label for="country_japan2"
-                ><input
-                  type="checkbox"
-                  id="country_japan2"
-                  name="country"
-                  value="Japan"
-                />
-                Japan</label
-              >
-              <!-- Add more countries as needed -->
-            </div>
+            <button onclick="toggleDropdown(event, this)">
+              Arbejdsopgaver
+            </button>
+            <ul>
+              <li>
+                <label for="">
+                  <input type="checkbox" />Fruit picking eller
+                  landbrugsarbejde</label
+                >
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Serviceindustri</label>
+              </li>
+              <li>
+                <label for="">
+                  <input type="checkbox" />Frivilligt arbejde</label
+                >
+              </li>
+              <li>
+                <label for="">
+                  <input type="checkbox" />Engelsk undervisning</label
+                >
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Au pair-arbejde</label>
+              </li>
+              <li>
+                <label for="">
+                  <input type="checkbox" />Turisme og rejseledelse</label
+                >
+              </li>
+              <li>
+                <label for="">
+                  <input type="checkbox" />Event- eller festivalarbejde</label
+                >
+              </li>
+              <li>
+                <label for="">
+                  <input type="checkbox" />Sprogskoleinstruktør</label
+                >
+              </li>
+              <li>
+                <label for="">
+                  <input type="checkbox" />Kreativt freelancearbejde</label
+                >
+              </li>
+            </ul>
           </div>
+          <h2>Hvor lang tid vil du rejse?</h2>
           <div class="dropdown">
-            <input
-              type="text"
-              onclick="toggleDropdown('countryDropdown3')"
-              placeholder="Select countries"
-            />
-            <div id="countryDropdown3" class="dropdown-content">
-              <label for="country_usa1"
-                ><input
-                  type="checkbox"
-                  id="country_usa3"
-                  name="country"
-                  value="USA"
-                />
-                USA</label
-              >
-              <label for="country_canada1"
-                ><input
-                  type="checkbox"
-                  id="country_canada3"
-                  name="country"
-                  value="Canada"
-                />
-                Canada</label
-              >
-              <label for="country_australia1"
-                ><input
-                  type="checkbox"
-                  id="country_australia3"
-                  name="country"
-                  value="Australia"
-                />
-                Australia</label
-              >
-              <label for="country_japan1"
-                ><input
-                  type="checkbox"
-                  id="country_japan3"
-                  name="country"
-                  value="Japan"
-                />
-                Japan</label
-              >
-              <!-- Add more countries as needed -->
-            </div>
+            <button onclick="toggleDropdown(event, this)">Tid</button>
+            <ul>
+              <li>
+                <label for=""> <input type="checkbox" />Hej</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Hej</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Hej</label>
+              </li>
+            </ul>
           </div>
         </form>
       </div>
@@ -224,39 +169,11 @@
       </div>
     </footer>
     <script>
-      function toggleDropdown(id) {
-        var dropdownContent = document.getElementById(id);
-        dropdownContent.style.display =
-          dropdownContent.style.display === "block" ? "none" : "block";
-        event.stopPropagation(); // Prevents event from bubbling up to window
+      function toggleDropdown(event, button) {
+        const dropdown = button.parentElement;
+        const ul = dropdown.querySelector("ul");
+        ul.style.display = ul.style.display === "none" ? "block" : "none";
       }
-
-      // Close the dropdown only when clicking outside of the dropdown div or another input
-      window.onclick = function (event) {
-        var dropdowns = document.querySelectorAll(".dropdown-content");
-        dropdowns.forEach(function (dropdown) {
-          if (
-            !event.target.closest(".dropdown") &&
-            !dropdown.contains(event.target)
-          ) {
-            dropdown.style.display = "none";
-          }
-        });
-
-        var inputs = document.querySelectorAll('input[type="text"]');
-        inputs.forEach(function (input) {
-          if (input !== event.target) {
-            var dropdownContent = input.nextElementSibling;
-            if (
-              dropdownContent &&
-              dropdownContent.classList.contains("dropdown-content")
-            ) {
-              dropdownContent.style.display = "none";
-            }
-          }
-        });
-      };
     </script>
-    <script src="main.js"></script>
   </body>
 </html>
