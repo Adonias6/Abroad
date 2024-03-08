@@ -161,6 +161,52 @@
               <!-- Add more countries as needed -->
             </div>
           </div>
+          <div class="dropdown">
+            <input
+              type="text"
+              onclick="toggleDropdown('countryDropdown3')"
+              placeholder="Select countries"
+            />
+            <div id="countryDropdown3" class="dropdown-content">
+              <label for="country_usa1"
+                ><input
+                  type="checkbox"
+                  id="country_usa3"
+                  name="country"
+                  value="USA"
+                />
+                USA</label
+              >
+              <label for="country_canada1"
+                ><input
+                  type="checkbox"
+                  id="country_canada3"
+                  name="country"
+                  value="Canada"
+                />
+                Canada</label
+              >
+              <label for="country_australia1"
+                ><input
+                  type="checkbox"
+                  id="country_australia3"
+                  name="country"
+                  value="Australia"
+                />
+                Australia</label
+              >
+              <label for="country_japan1"
+                ><input
+                  type="checkbox"
+                  id="country_japan3"
+                  name="country"
+                  value="Japan"
+                />
+                Japan</label
+              >
+              <!-- Add more countries as needed -->
+            </div>
+          </div>
         </form>
       </div>
     </main>
@@ -182,16 +228,33 @@
         var dropdownContent = document.getElementById(id);
         dropdownContent.style.display =
           dropdownContent.style.display === "block" ? "none" : "block";
+        event.stopPropagation(); // Prevents event from bubbling up to window
       }
 
-      // Close the dropdown if the user clicks outside of it
+      // Close the dropdown only when clicking outside of the dropdown div or another input
       window.onclick = function (event) {
-        if (!event.target.matches(".dropdown input")) {
-          var dropdownContents = document.querySelectorAll(".dropdown-content");
-          dropdownContents.forEach(function (dropdownContent) {
-            dropdownContent.style.display = "none";
-          });
-        }
+        var dropdowns = document.querySelectorAll(".dropdown-content");
+        dropdowns.forEach(function (dropdown) {
+          if (
+            !event.target.closest(".dropdown") &&
+            !dropdown.contains(event.target)
+          ) {
+            dropdown.style.display = "none";
+          }
+        });
+
+        var inputs = document.querySelectorAll('input[type="text"]');
+        inputs.forEach(function (input) {
+          if (input !== event.target) {
+            var dropdownContent = input.nextElementSibling;
+            if (
+              dropdownContent &&
+              dropdownContent.classList.contains("dropdown-content")
+            ) {
+              dropdownContent.style.display = "none";
+            }
+          }
+        });
       };
     </script>
     <script src="main.js"></script>
