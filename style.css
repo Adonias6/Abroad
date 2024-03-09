@@ -638,6 +638,7 @@ height: fit-content;
   padding: 40px 20px 60px 20px;
   background-color: white;
   border-radius: 20px;
+  box-shadow: 0px 1px 3px rgb(199, 199, 199);
 }
 .top-questions-content{
   display: flex;
@@ -837,14 +838,15 @@ footer{
     font-size: 20px;
   }
   .questions-form h2{
-    font-size: 18px;
+    font-size: 14px;
+    text-align: start;
   }
   .bars-wrapper{
     display: flex;
     gap: 5px;
   }
   .form-bars{
-    width: 80px;
+    width: 120px;
   }
 
   .questions-buttons a{
@@ -881,5 +883,8 @@ footer{
       }
       .left-content div p, .right-content div p{
         font-size: 12px;
+      }
+      .form-bars{
+        width: 90px;
       }
   }
