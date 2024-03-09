@@ -594,7 +594,7 @@ height: auto;
   margin-bottom: 15px;
 }
 
-.from input {
+.input {
   border-radius: 20px;
   box-shadow: 0px 1px 3px rgb(199, 199, 199);
   outline: 0 !important;
@@ -619,24 +619,31 @@ label{
 .wrapper-questions{
   width: 100%;
   height: 1200px;
-  background-image: url(/img/questions/main.webp);
   background-position: center;
   background-size: cover;
   margin-top: 10px;
   margin-bottom: 80px;
   display: flex;
   justify-content: center;
+  padding: 50px 0;
+  border-radius: 25px;
 }
 .questions-form{
   width: 500px;
-  height: fit-content;
+height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  padding: 40px 20px 120px 20px;
+  gap: 30px;
+  padding: 40px 20px 60px 20px;
   background-color: white;
   border-radius: 20px;
+}
+.top-questions-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .questions-form label{
   font-size: 18px;
@@ -680,7 +687,9 @@ background-color: var(--logo-color);
 .dropdown ul label{
   display: flex;
   gap: 10px;
+  margin-top: 15px;
 }
+
 .dropdown{
   width: 100%;
 }
@@ -695,6 +704,32 @@ background-color: var(--logo-color);
   box-shadow: 0px 1px 3px rgb(199, 199, 199);
   font-size: 16px;
 }
+.tellus{
+  width: 100%;
+  padding: 10px 10px;
+  box-shadow: 0px 1px 3px rgb(199, 199, 199);
+  border-radius: 50px;
+}
+.questions-buttons{
+display: flex;
+gap: 10px;
+margin-top: 50px;
+}
+.questions-buttons a{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+background-color: white;
+border: none;
+box-shadow: 0px 1px 3px rgb(199, 199, 199);
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+  #buttons-active{
+    background-color: var(--logo-color);
+    color: white;
+  }
 
   @media screen and (max-width: 900px) {
     .wrapper .carousel {
@@ -780,7 +815,41 @@ footer{
   .tilmeld-hero {
    display: none;
   }
-  
+  .wrapper-questions{
+    width: 100%;
+    height: 1200px;
+  }
+  .questions-form{
+    width: 100%;
+
+  }
+  .top-questions-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .questions-form label{
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  .questions-form h1{
+    font-size: 20px;
+  }
+  .questions-form h2{
+    font-size: 18px;
+  }
+  .bars-wrapper{
+    display: flex;
+    gap: 5px;
+  }
+  .form-bars{
+    width: 80px;
+  }
+
+  .questions-buttons a{
+    width: 160px;
+    }
     
   }
   @media screen and (max-width: 600px) {

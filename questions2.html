@@ -60,106 +60,77 @@
     <main>
       <div
         class="wrapper-questions"
-        style="background-image: url(/img/questions/main.webp)"
+        style="background-image: url(/img/questions/2.webp)"
       >
         <form class="questions-form">
-          <div class="bars-wrapper">
-            <div class="form-bars" id="active-bar"></div>
-            <div class="form-bars"></div>
-            <div class="form-bars"></div>
-            <div class="form-bars"></div>
+          <div class="top-questions-content">
+            <div class="bars-wrapper">
+              <div class="form-bars" id="active-bar"></div>
+              <div class="form-bars" id="active-bar"></div>
+              <div class="form-bars" id="active-bar"></div>
+              <div class="form-bars"></div>
+            </div>
+            <h1>Find din rejse!</h1>
           </div>
-          <h1>Find din rejse!</h1>
-          <h2>Hvilke lande vil du gerne arbejde i?</h2>
+          <h2>Hvor mange timers arbejde ønsker du om ugen?</h2>
           <div class="dropdown">
-            <button onclick="toggleDropdown(event, this)">
-              Vælg dine lande
-            </button>
+            <button onclick="toggleDropdown(event, this)">Timer</button>
             <ul>
               <li>
-                <label for=""> <input type="checkbox" />Lissabon</label>
+                <label for=""> <input type="checkbox" />10 timer</label>
               </li>
               <li>
-                <label for=""> <input type="checkbox" />Barcelona</label>
+                <label for=""> <input type="checkbox" />15 timer</label>
               </li>
               <li>
-                <label for=""> <input type="checkbox" />Paris</label>
-              </li>
-              <li>
-                <label for=""> <input type="checkbox" />Valpolicella</label>
-              </li>
-            </ul>
-          </div>
-          <h2>Hvilke arbejdsopgaver vil du gerne have?</h2>
-          <div class="dropdown">
-            <button onclick="toggleDropdown(event, this)">
-              Arbejdsopgaver
-            </button>
-            <ul>
-              <li>
-                <label for="">
-                  <input type="checkbox" />Fruit picking eller
-                  landbrugsarbejde</label
-                >
-              </li>
-              <li>
-                <label for=""> <input type="checkbox" />Serviceindustri</label>
+                <label for=""> <input type="checkbox" />21 timer</label>
               </li>
               <li>
                 <label for="">
-                  <input type="checkbox" />Frivilligt arbejde</label
-                >
-              </li>
-              <li>
-                <label for="">
-                  <input type="checkbox" />Engelsk undervisning</label
-                >
-              </li>
-              <li>
-                <label for=""> <input type="checkbox" />Au pair-arbejde</label>
-              </li>
-              <li>
-                <label for="">
-                  <input type="checkbox" />Turisme og rejseledelse</label
-                >
-              </li>
-              <li>
-                <label for="">
-                  <input type="checkbox" />Event- eller festivalarbejde</label
-                >
-              </li>
-              <li>
-                <label for="">
-                  <input type="checkbox" />Sprogskoleinstruktør</label
-                >
-              </li>
-              <li>
-                <label for="">
-                  <input type="checkbox" />Kreativt freelancearbejde</label
+                  <input type="checkbox" />37 timer (Fuldtid)</label
                 >
               </li>
             </ul>
           </div>
-          <h2>Hvor lang tid vil du rejse?</h2>
+          <h2>Hvor mange dage om ugen vil du arbejde?</h2>
           <div class="dropdown">
-            <button onclick="toggleDropdown(event, this)">Tid</button>
+            <button onclick="toggleDropdown(event, this)">Dage</button>
             <ul>
               <li>
-                <label for=""> <input type="checkbox" />3 måneder</label>
+                <label for=""> <input type="checkbox" />3 dage</label>
               </li>
               <li>
-                <label for=""> <input type="checkbox" />6 måneder</label>
+                <label for=""> <input type="checkbox" />4 dage</label>
               </li>
               <li>
-                <label for=""> <input type="checkbox" />9 måneder</label>
+                <label for=""> <input type="checkbox" />5 dage</label>
               </li>
               <li>
-                <label for=""> <input type="checkbox" />12 måneder</label>
+                <label for=""> <input type="checkbox" />6 dage</label>
+              </li>
+            </ul>
+          </div>
+          <h2>Hvor fysik krævende må arbejdet være?</h2>
+          <div class="dropdown">
+            <button onclick="toggleDropdown(event, this)">Arbejdet</button>
+            <ul>
+              <li>
+                <label for=""> <input type="checkbox" />Let</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Øvet</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Hårdt</label>
+              </li>
+              <li>
+                <label for=""> <input type="checkbox" />Virkelig hårdt</label>
               </li>
             </ul>
           </div>
           <div class="questions-buttons">
-            <a id="buttons-active" href="questions1.html">Next</a>
+            <a href="questions1.html">Back</a>
+            <a id="buttons-active" href="questions3.html">Next</a>
           </div>
         </form>
       </div>
