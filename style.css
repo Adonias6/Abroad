@@ -669,10 +669,11 @@ height: fit-content;
 }
 .bars-wrapper{
   display: flex;
+  width: 100%;
   gap: 5px;
 }
 .form-bars{
-  width: 100px;
+  width: 100%;
   height: 3px;
   border-radius: 20px;
   background: grey;
@@ -820,10 +821,7 @@ footer{
   .wrapper-questions{
     width: 100%;
   }
-  .questions-form{
-    width: 100%;
-
-  }
+ 
   .top-questions-content{
     display: flex;
     flex-direction: column;
@@ -845,9 +843,7 @@ footer{
     display: flex;
     gap: 5px;
   }
-  .form-bars{
-    width: 120px;
-  }
+ 
 
   .questions-buttons a{
     width: 160px;
@@ -884,7 +880,8 @@ footer{
       .left-content div p, .right-content div p{
         font-size: 12px;
       }
-      .form-bars{
-        width: 90px;
+      .questions-form{
+        width: 100%;
+    
       }
   }
